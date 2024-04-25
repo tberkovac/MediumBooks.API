@@ -1,0 +1,12 @@
+/Users/tarik/Projects/MediumBooks.API/Users Module/MediumBooks.Users/bin/Debug/net8.0/MediumBooks.Users.deps.json
+/Users/tarik/Projects/MediumBooks.API/Users Module/MediumBooks.Users/bin/Debug/net8.0/MediumBooks.Users.dll
+/Users/tarik/Projects/MediumBooks.API/Users Module/MediumBooks.Users/bin/Debug/net8.0/MediumBooks.Users.pdb
+/Users/tarik/Projects/MediumBooks.API/Users Module/MediumBooks.Users/obj/Debug/net8.0/MediumBooks.Users.csproj.AssemblyReference.cache
+/Users/tarik/Projects/MediumBooks.API/Users Module/MediumBooks.Users/obj/Debug/net8.0/MediumBooks.Users.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tarik/Projects/MediumBooks.API/Users Module/MediumBooks.Users/obj/Debug/net8.0/MediumBooks.Users.AssemblyInfoInputs.cache
+/Users/tarik/Projects/MediumBooks.API/Users Module/MediumBooks.Users/obj/Debug/net8.0/MediumBooks.Users.AssemblyInfo.cs
+/Users/tarik/Projects/MediumBooks.API/Users Module/MediumBooks.Users/obj/Debug/net8.0/MediumBooks.Users.csproj.CoreCompileInputs.cache
+/Users/tarik/Projects/MediumBooks.API/Users Module/MediumBooks.Users/obj/Debug/net8.0/MediumBooks.Users.dll
+/Users/tarik/Projects/MediumBooks.API/Users Module/MediumBooks.Users/obj/Debug/net8.0/refint/MediumBooks.Users.dll
+/Users/tarik/Projects/MediumBooks.API/Users Module/MediumBooks.Users/obj/Debug/net8.0/MediumBooks.Users.pdb
+/Users/tarik/Projects/MediumBooks.API/Users Module/MediumBooks.Users/obj/Debug/net8.0/ref/MediumBooks.Users.dll
