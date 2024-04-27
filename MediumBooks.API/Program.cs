@@ -1,4 +1,5 @@
 using MediumBooks.Users;
+using MediumBooks.Readings;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.ImplementUsersModule(builder.Configuration);
+builder.Services.ImplementReadingModule(builder.Configuration);
 
 var app = builder.Build();
 

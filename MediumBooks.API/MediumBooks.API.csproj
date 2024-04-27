@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Users Module\MediumBooks.Users\MediumBooks.Users.csproj" />
+    <ProjectReference Include="..\Reading Module\MediumBooks.Readings\MediumBooks.Readings.csproj" />
   </ItemGroup>
 
 </Project>

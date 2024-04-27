@@ -10,3 +10,4 @@
 /Users/tarik/Projects/MediumBooks.API/Users Module/MediumBooks.Users/obj/Debug/net8.0/refint/MediumBooks.Users.dll
 /Users/tarik/Projects/MediumBooks.API/Users Module/MediumBooks.Users/obj/Debug/net8.0/MediumBooks.Users.pdb
 /Users/tarik/Projects/MediumBooks.API/Users Module/MediumBooks.Users/obj/Debug/net8.0/ref/MediumBooks.Users.dll
+/Users/tarik/Projects/MediumBooks.API/Users Module/MediumBooks.Users/obj/Debug/net8.0/MediumBooks.Users.sourcelink.json

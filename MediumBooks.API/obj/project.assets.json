@@ -1359,6 +1359,21 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "MediumBooks.Readings/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
+          "Microsoft.AspNetCore.OpenApi": "8.0.4",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.2"
+        },
+        "compile": {
+          "bin/placeholder/MediumBooks.Readings.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MediumBooks.Readings.dll": {}
+        }
+      },
       "MediumBooks.Users/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -3460,6 +3475,11 @@
         "version.txt"
       ]
     },
+    "MediumBooks.Readings/1.0.0": {
+      "type": "project",
+      "path": "../Reading Module/MediumBooks.Readings/MediumBooks.Readings.csproj",
+      "msbuildProject": "../Reading Module/MediumBooks.Readings/MediumBooks.Readings.csproj"
+    },
     "MediumBooks.Users/1.0.0": {
       "type": "project",
       "path": "../Users Module/MediumBooks.Users/MediumBooks.Users.csproj",
@@ -3468,6 +3488,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "MediumBooks.Readings >= 1.0.0",
       "MediumBooks.Users >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.4",
@@ -3499,6 +3520,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "/Users/tarik/Projects/MediumBooks.API/Reading Module/MediumBooks.Readings/MediumBooks.Readings.csproj": {
+              "projectPath": "/Users/tarik/Projects/MediumBooks.API/Reading Module/MediumBooks.Readings/MediumBooks.Readings.csproj"
+            },
             "/Users/tarik/Projects/MediumBooks.API/Users Module/MediumBooks.Users/MediumBooks.Users.csproj": {
               "projectPath": "/Users/tarik/Projects/MediumBooks.API/Users Module/MediumBooks.Users/MediumBooks.Users.csproj"
             }
