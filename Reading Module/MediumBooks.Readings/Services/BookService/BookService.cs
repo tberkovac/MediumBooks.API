@@ -21,4 +21,9 @@ public class BookService: IBookService
 
         return result;
     }
+
+    public async Task<bool> UpdateBooksAuthor(int userId, string author)
+    {
+        return await _bookRepository.UpdateAuthorAsync(userId, author);
+    } 
 }

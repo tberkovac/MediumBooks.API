@@ -16,4 +16,10 @@ public class UserRepository : IUserRepository
     {
         return await _dbContext.Users.FirstOrDefaultAsync(x => x.UserId == userId);
     }
+
+    public async Task SaveChangesAsync()
+    {
+        _dbContext.ChangeTracker.DetectChanges();
+        await _dbContext.SaveChangesAsync();
+    }
 }

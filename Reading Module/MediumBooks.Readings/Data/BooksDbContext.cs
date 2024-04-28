@@ -4,7 +4,7 @@ namespace MediumBooks.Readings;
 
 public class BooksDbContext: DbContext
 {
-    public BooksDbContext(DbContextOptions options) : base(options)
+    public BooksDbContext(DbContextOptions<BooksDbContext> options) : base(options)
     {
     }
 

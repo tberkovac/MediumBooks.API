@@ -18,4 +18,10 @@ public class UsersController: ControllerBase
     {
         return await _userService.GetUser(id);
     }
+
+    [HttpPut]
+    public async Task<User> UpdateUser(User user)
+    {
+        return await _userService.UpdateUser(user);
+    }
 }

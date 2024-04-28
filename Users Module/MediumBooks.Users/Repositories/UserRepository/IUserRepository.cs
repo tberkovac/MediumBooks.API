@@ -3,4 +3,5 @@
 public interface IUserRepository
 {
     Task<User?> GetUserAsync(int userId);
+    Task SaveChangesAsync();
 }

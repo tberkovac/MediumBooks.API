@@ -11,6 +11,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.ImplementUsersModule(builder.Configuration);
 builder.Services.ImplementReadingModule(builder.Configuration);
 
+builder.Services.AddMediatR(cfg =>
+    cfg.RegisterServicesFromAssemblies([typeof(UpdateBooksAuthorCommandHandler).Assembly]
+    )
+);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
