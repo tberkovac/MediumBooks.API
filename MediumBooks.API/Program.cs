@@ -1,5 +1,6 @@
 using MediumBooks.Users;
 using MediumBooks.Readings;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +24,13 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
+    using var scope = app.Services.CreateScope();
+    var usersDbContext = scope.ServiceProvider.GetRequiredService<UsersDbContext>();
+    var booksDbContext = scope.ServiceProvider.GetRequiredService<BooksDbContext>();    
+    //publishing module does not implement anything yet
+    usersDbContext.Database.Migrate();
+    booksDbContext.Database.Migrate();
 }
 
 app.UseHttpsRedirection();

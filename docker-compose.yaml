@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  web:
+    image: medium-books-api
+    container_name: medium-books-api_c
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    ports:
+      - 5075:5075
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      db:
+        condition: service_healthy
+  db:
+    image: medium-books-db
+    container_name: medium-books-db_c
+    build:
+      context: .
+      dockerfile: Dockerfile.db
+    ports:
+      - 5435:5435
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: secretpassword
+      POSTGRES_DB: postgres
+      PGPORT: 5435
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      retries: 5
+      timeout: 5s
