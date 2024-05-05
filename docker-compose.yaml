@@ -33,3 +33,14 @@ services:
       interval: 10s
       retries: 5
       timeout: 5s
+  pg-admin:
+    image: dpage/pgadmin4
+    container_name: pgAdmin4_c
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@mail.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - 8080:80
+    depends_on:
+      db:
+        condition: service_healthy
